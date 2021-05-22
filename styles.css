@@ -1,0 +1,36 @@
+/*      1rem === 10 px      */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+
+/*color*/
+/*https://colorhunt.co/palette/265183*/
+/*
+e4fbff  celeste
+b8b5ff  lila
+7868e6  morado
+edeef7  gris
+*/
+
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #7868e6;
+    --secundario: #e4fbff;
+
+    --fuente-ppal: 3.8rem;
+    
+}
+
+.titulo{
+    text-align: center;
+    font-size: var(--fuente-ppal);
+    color: var(--primario);
+}
+
+.titulo span{
+    font-size: 2rem;
+}
