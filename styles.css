@@ -73,7 +73,13 @@ h1,h2,h3{
     text-decoration: none;
     text-transform: uppercase;
     width: 90%;
+    border: none;
 }
+
+.boton:hover{
+    cursor: pointer;
+}
+
 @media (min-width: 480px ){
     .boton{
         width: auto;
@@ -169,10 +175,13 @@ h1,h2,h3{
 
 
 .conocimiento{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .conocimiento h3{
+    color: var(--primario);
 
 }
 
@@ -181,5 +190,60 @@ h1,h2,h3{
     width: 15rem;
     background-color: var(--blanco);
     border-radius: 50%;
-    border: 1px solid var(--primario);
+    border: 3px solid var(--primario);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+/*CONTACTO*/
+.formulario{
+    background-color: var(--secundario);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--oscuro);
+}
+
+.contenedor-campos{
+
+
+}
+
+.campo{
+    margin-bottom: 1rem;
+
+}
+
+.campo label{
+    color: var(--oscuro);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.enviar .boton{
+    width: 100%;
+
 }
